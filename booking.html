@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book a Service - AutoCare</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="logo">
+          <h1>Auto<span>Care</span></h1>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/about.html">About Us</a></li>
+            <li><a href="/services.html">Services</a></li>
+            <li><a href="/pricing.html">Pricing</a></li>
+            <li><a href="/contact.html">Contact</a></li>
+            <li><a href="/gallery.html">Gallery</a></li>
+            <li><a href="/faq.html">Faq</a></li>
+            <li><a href="/testimonials.html">Testimonials</a></li>
+          </ul>
+          <div class="nav-btns">
+            <a href="login.html" class="btn-outline">Login</a>
+            <a href="booking.html" class="btn">Book Now</a>
+          </div>
+        </nav>
+        <div class="mobile-menu">
+          <i class="fas fa-bars"></i>
+        </div>
+      </div>
+    </header>
+    <!-- Booking Banner -->
+    <section class="page-banner">
+      <div class="container">
+        <h1>Book a Service</h1>
+        <p>Schedule your car service appointment online</p>
+      </div>
+    </section>
+
+    <!-- Booking Form -->
+    <section class="booking-section">
+      <div class="container">
+        <div class="booking-form">
+          <h2>Service Appointment Request</h2>
+          <p>
+            Fill out the form below and we'll contact you to confirm your
+            appointment
+          </p>
+
+          <form id="serviceBookingForm">
+            <!-- Step 1: Customer Information -->
+            <div class="form-step active" id="step1">
+              <h3><span>1</span> Your Information</h3>
+              <div class="form-group">
+                <label for="name">Full Name*</label>
+                <input type="text" id="name" name="name" required />
+              </div>
+              <div class="form-group">
+                <label for="email">Email*</label>
+                <input type="email" id="email" name="email" required />
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone Number*</label>
+                <input type="tel" id="phone" name="phone" required />
+              </div>
+              <div class="form-actions">
+                <button type="button" class="btn next-step">Next</button>
+              </div>
+            </div>
+
+            <!-- Step 2: Vehicle Information -->
+            <div class="form-step" id="step2">
+              <h3><span>2</span> Vehicle Details</h3>
+              <div class="form-group">
+                <label for="make">Car Make*</label>
+                <select id="make" name="make" required>
+                  <option value="">Select Make</option>
+                  <option value="Toyota">Toyota</option>
+                  <option value="Honda">Honda</option>
+                  <option value="Ford">Ford</option>
+                  <option value="Chevrolet">Chevrolet</option>
+                  <option value="Nissan">Nissan</option>
+                  <option value="Other">Other</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="model">Car Model*</label>
+                <input type="text" id="model" name="model" required />
+              </div>
+              <div class="form-group">
+                <label for="year">Year*</label>
+                <input
+                  type="number"
+                  id="year"
+                  name="year"
+                  min="1990"
+                  max="2023"
+                  required
+                />
+              </div>
+              <div class="form-actions">
+                <button type="button" class="btn-outline prev-step">
+                  Back
+                </button>
+                <button type="button" class="btn next-step">Next</button>
+              </div>
+            </div>
+
+            <!-- Step 3: Service Selection -->
+            <div class="form-step" id="step3">
+              <h3><span>3</span> Service Needed</h3>
+              <div class="form-group">
+                <label for="service">Select Service*</label>
+                <select id="service" name="service" required>
+                  <option value="">Select Service</option>
+                  <option value="General Service">General Car Service</option>
+                  <option value="Engine Repair">Engine Repair</option>
+                  <option value="AC Service">AC Service</option>
+                  <option value="Battery">Battery Replacement</option>
+                  <option value="Car Wash">Car Wash & Polishing</option>
+                  <option value="Denting">Denting & Painting</option>
+                  <option value="Maintenance">Periodic Maintenance</option>
+                  <option value="Other">Other</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="problem">Problem Description*</label>
+                <textarea
+                  id="problem"
+                  name="problem"
+                  rows="4"
+                  required
+                ></textarea>
+              </div>
+              <div class="form-actions">
+                <button type="button" class="btn-outline prev-step">
+                  Back
+                </button>
+                <button type="button" class="btn next-step">Next</button>
+              </div>
+            </div>
+
+            <!-- Step 4: Appointment Details -->
+            <div class="form-step" id="step4">
+              <h3><span>4</span> Appointment Details</h3>
+              <div class="form-group">
+                <label for="date">Preferred Date*</label>
+                <input type="date" id="date" name="date" required />
+              </div>
+              <div class="form-group">
+                <label for="time">Preferred Time*</label>
+                <select id="time" name="time" required>
+                  <option value="">Select Time</option>
+                  <option value="Morning (8AM-12PM)">Morning (8AM-12PM)</option>
+                  <option value="Afternoon (12PM-4PM)">
+                    Afternoon (12PM-4PM)
+                  </option>
+                  <option value="Evening (4PM-6PM)">Evening (4PM-6PM)</option>
+                </select>
+              </div>
+              <div class="form-group checkbox-group">
+                <input type="checkbox" id="pickup" name="pickup" />
+                <label for="pickup"
+                  >I need pickup and drop service (+$25)</label
+                >
+              </div>
+              <div class="form-actions">
+                <button type="button" class="btn-outline prev-step">
+                  Back
+                </button>
+                <button type="submit" class="btn">Submit Booking</button>
+              </div>
+            </div>
+          </form>
+        </div>
+
+        <div class="booking-info">
+          <h3>Why Book With Us?</h3>
+          <ul>
+            <li>
+              <i class="fas fa-check-circle"></i> Instant booking confirmation
+            </li>
+            <li><i class="fas fa-check-circle"></i> No hidden charges</li>
+            <li>
+              <i class="fas fa-check-circle"></i> Free inspection with every
+              service
+            </li>
+            <li>
+              <i class="fas fa-check-circle"></i> Warranty on all services
+            </li>
+            <li>
+              <i class="fas fa-check-circle"></i> Pickup and drop service
+              available
+            </li>
+          </ul>
+
+          <div class="contact-box">
+            <h3>Need Immediate Help?</h3>
+            <p>Call us now to speak with a service advisor</p>
+            <a href="tel:+1234567890" class="btn"
+              ><i class="fas fa-phone"></i> +1 (234) 567-8900</a
+            >
+          </div>
+
+          <div class="hours-box">
+            <h3>Service Hours</h3>
+            <ul>
+              <li>Monday - Friday: 8:00 AM - 6:00 PM</li>
+              <li>Saturday: 9:00 AM - 4:00 PM</li>
+              <li>Sunday: Closed</li>
+              <li>Emergency Roadside: 24/7</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Booking Confirmation Modal -->
+    <div class="modal" id="bookingConfirmation">
+      <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <div class="modal-icon">
+          <i class="fas fa-check-circle"></i>
+        </div>
+        <h2>Booking Request Received!</h2>
+        <p>
+          Thank you for choosing AutoCare. We've received your service request
+          and will contact you shortly to confirm your appointment.
+        </p>
+        <p>
+          A confirmation email has been sent to <span id="confirmEmail"></span>
+        </p>
+        <div class="modal-btns">
+          <a href="/index.html" class="btn">Back to Home</a>
+          <a href="/services.html" class="btn-outline">View Services</a>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-col">
+            <h3>AutoCare</h3>
+            <p>
+              Your trusted partner for all car repair and maintenance services.
+            </p>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+          <div class="footer-col">
+            <h3>Quick Links</h3>
+            <ul>
+               <li><a href="/index.html">Home</a></li>
+            <li><a href="/about.html">About Us</a></li>
+            <li><a href="/services.html">Services</a></li>
+            <li><a href="/pricing.html">Pricing</a></li>
+            <li><a href="/contact.html">Contact</a></li>
+            <li><a href="/gallery.html">Gallery</a></li>
+            <li><a href="/faq.html">Faq</a></li>
+            <li><a href="/testimonials.html">Testimonials</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h3>Services</h3>
+            <ul>
+              <li><a href="/services.html">Engine Repair</a></li>
+              <li><a href="/services.html">AC Service</a></li>
+              <li><a href="/services.html">Battery Replacement</a></li>
+              <li><a href="/services.html">Denting & Painting</a></li>
+              <li><a href="/services.html">Periodic Maintenance</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h3>Contact Us</h3>
+            <ul class="contact-info">
+              <li>
+                <i class="fas fa-map-marker-alt"></i> 123 Auto Street, Repair
+                City
+              </li>
+              <li><i class="fas fa-phone"></i> +1 (234) 567-8900</li>
+              <li><i class="fas fa-envelope"></i> info@autocare.com</li>
+              <li><i class="fas fa-clock"></i> Mon-Sat: 8:00 AM - 6:00 PM</li>
+            </ul>
+          </div>
+        </div>
+        <div class="copyright">
+          <p>&copy; 2025 Ankit Prajapati. All Rights Reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="main.js"></script>
+  </body>
+</html>

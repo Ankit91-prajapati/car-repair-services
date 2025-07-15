@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us - AutoCare</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="logo">
+          <h1>Auto<span>Care</span></h1>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/about.html">About Us</a></li>
+            <li><a href="/services.html">Services</a></li>
+            <li><a href="/pricing.html">Pricing</a></li>
+            <li><a href="/contact.html">Contact</a></li>
+            <li><a href="/gallery.html">Gallery</a></li>
+            <li><a href="/faq.html">Faq</a></li>
+            <li><a href="/testimonials.html">Testimonials</a></li>
+          </ul>
+          <div class="nav-btns">
+            <a href="login.html" class="btn-outline">Login</a>
+            <a href="booking.html" class="btn">Book Now</a>
+          </div>
+        </nav>
+        <div class="mobile-menu">
+          <i class="fas fa-bars"></i>
+        </div>
+      </div>
+    </header>
+    <!-- Contact Banner -->
+    <section class="page-banner">
+      <div class="container">
+        <h1>Contact Us</h1>
+        <p>We're here to help with all your auto service needs</p>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+      <div class="container">
+        <div class="contact-grid">
+          <!-- Contact Info -->
+          <div class="contact-info">
+            <h2>Get In Touch</h2>
+            <div class="info-item">
+              <div class="info-icon">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <div class="info-content">
+                <h3>Address</h3>
+                <p>123 Auto Street<br />Repair City, RC 12345</p>
+              </div>
+            </div>
+            <div class="info-item">
+              <div class="info-icon">
+                <i class="fas fa-phone"></i>
+              </div>
+              <div class="info-content">
+                <h3>Phone</h3>
+                <p><a href="tel:+1234567890">+1 (234) 567-8900</a></p>
+                <p>
+                  24/7 Roadside Assistance:
+                  <a href="tel:+1234567891">+1 (234) 567-8901</a>
+                </p>
+              </div>
+            </div>
+            <div class="info-item">
+              <div class="info-icon">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <div class="info-content">
+                <h3>Email</h3>
+                <p>
+                  <a href="mailto:info@autocare.com">info@autocare123.com</a>
+                </p>
+                <p>
+                  <a href="mailto:support@autocare.com"
+                    >support@autocare123.com</a
+                  >
+                </p>
+              </div>
+            </div>
+            <div class="info-item">
+              <div class="info-icon">
+                <i class="fas fa-clock"></i>
+              </div>
+              <div class="info-content">
+                <h3>Hours</h3>
+                <p>Monday - Friday: 8:00 AM - 6:00 PM</p>
+                <p>Saturday: 9:00 AM - 4:00 PM</p>
+                <p>Sunday: Closed</p>
+                <p>Emergency Roadside: 24/7</p>
+              </div>
+            </div>
+
+            <div class="social-links">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+
+          <!-- Contact Form -->
+          <div class="contact-form">
+            <h2>Send Us a Message</h2>
+            <form id="contactForm">
+              <div class="form-group">
+                <label for="contactName">Name*</label>
+                <input type="text" id="contactName" name="name" required />
+              </div>
+              <div class="form-group">
+                <label for="contactEmail">Email*</label>
+                <input type="email" id="contactEmail" name="email" required />
+              </div>
+              <div class="form-group">
+                <label for="contactPhone">Phone</label>
+                <input type="tel" id="contactPhone" name="phone" />
+              </div>
+              <div class="form-group">
+                <label for="contactSubject">Subject*</label>
+                <select id="contactSubject" name="subject" required>
+                  <option value="">Select Subject</option>
+                  <option value="General Inquiry">General Inquiry</option>
+                  <option value="Service Question">Service Question</option>
+                  <option value="Booking Help">Booking Help</option>
+                  <option value="Feedback">Feedback</option>
+                  <option value="Complaint">Complaint</option>
+                  <option value="Other">Other</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="contactMessage">Message*</label>
+                <textarea
+                  id="contactMessage"
+                  name="message"
+                  rows="5"
+                  required
+                ></textarea>
+              </div>
+              <button type="submit" class="btn">Send Message</button>
+            </form>
+          </div>
+        </div>
+
+        <!-- Map -->
+        <div class="map-container">
+          <h2 class="section-title">Our Location</h2>
+          <div class="map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.215573291234!2d-73.98784492452562!3d40.7484409713893!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDDCsDQ0JzU0LjQiTiA3M8KwNTknMTMuNiJX!5e0!3m2!1sen!2sus!4v1623251234567!5m2!1sen!2sus"
+              width="100%"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="cta">
+      <div class="container">
+        <h2>Need Immediate Assistance?</h2>
+        <p>Call our 24/7 roadside assistance line for emergency help</p>
+        <a href="tel:+1234567891" class="btn"
+          ><i class="fas fa-phone"></i> +1 (234) 567-8901</a
+        >
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-col">
+            <h3>AutoCare</h3>
+            <p>
+              Your trusted partner for all car repair and maintenance services.
+            </p>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+          <div class="footer-col">
+            <h3>Quick Links</h3>
+            <ul>
+               <li><a href="/index.html">Home</a></li>
+            <li><a href="/about.html">About Us</a></li>
+            <li><a href="/services.html">Services</a></li>
+            <li><a href="/pricing.html">Pricing</a></li>
+            <li><a href="/contact.html">Contact</a></li>
+            <li><a href="/gallery.html">Gallery</a></li>
+            <li><a href="/faq.html">Faq</a></li>
+            <li><a href="/testimonials.html">Testimonials</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h3>Services</h3>
+            <ul>
+              <li><a href="services.html">Engine Repair</a></li>
+              <li><a href="services.html">AC Service</a></li>
+              <li><a href="services.html">Battery Replacement</a></li>
+              <li><a href="services.html">Denting & Painting</a></li>
+              <li><a href="services.html">Periodic Maintenance</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h3>Contact Us</h3>
+            <ul class="contact-info">
+              <li>
+                <i class="fas fa-map-marker-alt"></i> 123 Auto Street, Repair
+                City
+              </li>
+              <li><i class="fas fa-phone"></i> +1 (234) 567-8900</li>
+              <li><i class="fas fa-envelope"></i> info@autocare.com</li>
+              <li><i class="fas fa-clock"></i> Mon-Sat: 8:00 AM - 6:00 PM</li>
+            </ul>
+          </div>
+        </div>
+        <div class="copyright">
+          <p>&copy; 2025 Ankit Prajapati. All Rights Reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="main.js"></script>
+  </body>
+</html>

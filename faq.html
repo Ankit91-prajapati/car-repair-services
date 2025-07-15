@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FAQs - AutoCare</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="logo">
+          <h1>Auto<span>Care</span></h1>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/about.html">About Us</a></li>
+            <li><a href="/services.html">Services</a></li>
+            <li><a href="/pricing.html">Pricing</a></li>
+            <li><a href="/contact.html">Contact</a></li>
+            <li><a href="/gallery.html">Gallery</a></li>
+            <li><a href="/faq.html">Faq</a></li>
+            <li><a href="/testimonials.html">Testimonials</a></li>
+          </ul>
+          <div class="nav-btns">
+            <a href="login.html" class="btn-outline">Login</a>
+            <a href="booking.html" class="btn">Book Now</a>
+          </div>
+        </nav>
+        <div class="mobile-menu">
+          <i class="fas fa-bars"></i>
+        </div>
+      </div>
+    </header>
+
+    <!-- FAQ Banner -->
+    <section class="page-banner">
+      <div class="container">
+        <h1>Frequently Asked Questions</h1>
+        <p>Find answers to common questions about our services</p>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+      <div class="container">
+        <div class="faq-categories">
+          <h2>Browse by Category</h2>
+          <div class="category-btns">
+            <button class="category-btn active" data-category="all">
+              All Questions
+            </button>
+            <button class="category-btn" data-category="service">
+              Service Process
+            </button>
+            <button class="category-btn" data-category="pricing">
+              Pricing & Payments
+            </button>
+            <button class="category-btn" data-category="warranty">
+              Warranties
+            </button>
+            <button class="category-btn" data-category="policies">
+              Policies
+            </button>
+          </div>
+        </div>
+
+        <div class="faq-accordion">
+          <!-- Service Process FAQs -->
+          <h3 class="faq-category-title" data-category="service">
+            Service Process
+          </h3>
+          <div class="faq-item" data-category="service">
+            <button class="faq-question">
+              How long does a typical service take?
+              <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Service duration depends on the type of service needed. A
+                general service typically takes 2-3 hours, while more complex
+                repairs may take a full day or longer. When you book your
+                appointment, we'll provide an estimated completion time based on
+                your specific needs.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item" data-category="service">
+            <button class="faq-question">
+              Do I need to book an appointment or can I walk in?
+              <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="faq-answer">
+              <p>
+                We recommend booking an appointment to ensure we can serve you
+                promptly. While we do accept walk-ins, priority is given to
+                customers with appointments. Emergency services are available
+                24/7 for roadside assistance.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item" data-category="service">
+            <button class="faq-question">
+              What should I bring when dropping off my car for service?
+              <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Please bring your vehicle registration, insurance information,
+                and any service records you may have. If your vehicle is under
+                warranty, bring your warranty information as well. Remove
+                personal belongings from your vehicle before service.
+              </p>
+            </div>
+          </div>
+
+          <!-- Pricing & Payments FAQs -->
+          <h3 class="faq-category-title" data-category="pricing">
+            Pricing & Payments
+          </h3>
+          <div class="faq-item" data-category="pricing">
+            <button class="faq-question">
+              Why are your prices estimates and not exact?
+              <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="faq-answer">
+              <p>
+                We provide estimates because the exact cost of repairs can't be
+                determined until we inspect your vehicle. Some issues may be
+                more or less extensive than initially apparent. We'll always
+                contact you for approval before performing any work beyond the
+                original estimate.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item" data-category="pricing">
+            <button class="faq-question">
+              What payment methods do you accept?
+              <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="faq-answer">
+              <p>
+                We accept all major credit cards (Visa, MasterCard, American
+                Express, Discover), debit cards, cash, and checks. We also offer
+                financing options for major repairs through our partners.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item" data-category="pricing">
+            <button class="faq-question">
+              Do you offer any discounts?
+              <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Yes! We offer a 10% discount for seniors, military personnel,
+                and first responders. We also have seasonal promotions and
+                package deals. Follow us on social media or sign up for our
+                newsletter to stay informed about current offers.
+              </p>
+            </div>
+          </div>
+
+          <!-- Warranties FAQs -->
+          <h3 class="faq-category-title" data-category="warranty">
+            Warranties
+          </h3>
+          <div class="faq-item" data-category="warranty">
+            <button class="faq-question">
+              What warranties do you offer on your services?
+              <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="faq-answer">
+              <p>
+                All our services come with a minimum 3-month warranty. Most
+                parts we install have manufacturer warranties ranging from 1
+                year to lifetime, depending on the part. We'll provide full
+                warranty details with your service report.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item" data-category="warranty">
+            <button class="faq-question">
+              Does your warranty cover towing if the repair fails?
+              <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Yes, if a warranted repair fails, we'll cover towing to our
+                facility within 25 miles. For longer distances, we'll reimburse
+                up to $100 of towing charges upon verification.
+              </p>
+            </div>
+          </div>
+
+          <!-- Policies FAQs -->
+          <h3 class="faq-category-title" data-category="policies">Policies</h3>
+          <div class="faq-item" data-category="policies">
+            <button class="faq-question">
+              What is your cancellation policy?
+              <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="faq-answer">
+              <p>
+                We request at least 24 hours notice for appointment
+                cancellations. There's no charge for cancellations made with
+                sufficient notice. Late cancellations (less than 24 hours) may
+                incur a $25 fee, except in emergency situations.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item" data-category="policies">
+            <button class="faq-question">
+              Can I reschedule my appointment?
+              <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Absolutely! You can reschedule your appointment anytime through
+                our online portal or by calling us. We recommend giving us as
+                much notice as possible to accommodate your preferred time.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item" data-category="policies">
+            <button class="faq-question">
+              What is your policy if additional repairs are needed?
+              <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="faq-answer">
+              <p>
+                We'll always contact you for approval before performing any
+                additional work. Our technicians will explain the needed
+                repairs, provide an updated estimate, and get your authorization
+                before proceeding.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Ask Question Form -->
+        <div class="ask-question">
+          <h2 class="section-title">Can't Find Your Answer?</h2>
+          <form id="questionForm">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="questionName">Name*</label>
+                <input type="text" id="questionName" name="name" required />
+              </div>
+              <div class="form-group">
+                <label for="questionEmail">Email*</label>
+                <input type="email" id="questionEmail" name="email" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="questionCategory">Question Category*</label>
+              <select id="questionCategory" name="category" required>
+                <option value="">Select Category</option>
+                <option value="Service Process">Service Process</option>
+                <option value="Pricing">Pricing & Payments</option>
+                <option value="Warranty">Warranties</option>
+                <option value="Policies">Policies</option>
+                <option value="Other">Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="questionText">Your Question*</label>
+              <textarea
+                id="questionText"
+                name="question"
+                rows="5"
+                required
+              ></textarea>
+            </div>
+            <button type="submit" class="btn">Submit Question</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-col">
+            <h3>AutoCare</h3>
+            <p>
+              Your trusted partner for all car repair and maintenance services.
+            </p>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+          <div class="footer-col">
+            <h3>Quick Links</h3>
+            <ul>
+               <li><a href="/index.html">Home</a></li>
+            <li><a href="/about.html">About Us</a></li>
+            <li><a href="/services.html">Services</a></li>
+            <li><a href="/pricing.html">Pricing</a></li>
+            <li><a href="/contact.html">Contact</a></li>
+            <li><a href="/gallery.html">Gallery</a></li>
+            <li><a href="/faq.html">Faq</a></li>
+            <li><a href="/testimonials.html">Testimonials</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h3>Services</h3>
+            <ul>
+              <li><a href="services.html">Engine Repair</a></li>
+              <li><a href="services.html">AC Service</a></li>
+              <li><a href="services.html">Battery Replacement</a></li>
+              <li><a href="services.html">Denting & Painting</a></li>
+              <li><a href="services.html">Periodic Maintenance</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h3>Contact Us</h3>
+            <ul class="contact-info">
+              <li>
+                <i class="fas fa-map-marker-alt"></i> 123 Auto Street, Repair
+                City
+              </li>
+              <li><i class="fas fa-phone"></i> +1 (234) 567-8900</li>
+              <li><i class="fas fa-envelope"></i> info@autocare.com</li>
+              <li><i class="fas fa-clock"></i> Mon-Sat: 8:00 AM - 6:00 PM</li>
+            </ul>
+          </div>
+        </div>
+        <div class="copyright">
+          <p>&copy; 2025 Ankit Prajapati. All Rights Reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="main.js"></script>
+  </body>
+</html>

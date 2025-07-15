@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login/Signup - AutoCare</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="logo">
+          <h1>Auto<span>Care</span></h1>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/about.html">About Us</a></li>
+            <li><a href="/services.html">Services</a></li>
+            <li><a href="/pricing.html">Pricing</a></li>
+            <li><a href="/contact.html">Contact</a></li>
+            <li><a href="/gallery.html">Gallery</a></li>
+            <li><a href="/faq.html">Faq</a></li>
+            <li><a href="/testimonials.html">Testimonials</a></li>
+          </ul>
+          <div class="nav-btns">
+            <a href="/login.html" class="btn-outline">Login</a>
+            <a href="/booking.html" class="btn">Book Now</a>
+          </div>
+        </nav>
+        <div class="mobile-menu">
+          <i class="fas fa-bars"></i>
+        </div>
+      </div>
+    </header>
+    <!-- Login Banner -->
+    <section class="page-banner">
+      <div class="container">
+        <h1>Customer Portal</h1>
+        <p>Access your service history and manage appointments</p>
+      </div>
+    </section>
+
+    <!-- Login/Signup Section -->
+    <section class="auth-section">
+      <div class="container">
+        <div class="auth-tabs">
+          <button class="tab-btn active" data-tab="login">Login</button>
+          <button class="tab-btn" data-tab="signup">Sign Up</button>
+        </div>
+
+        <!-- Login Form -->
+        <div class="auth-form active" id="login">
+          <form id="loginForm">
+            <div class="form-group">
+              <label for="loginEmail">Email*</label>
+              <input type="email" id="loginEmail" name="email" required />
+            </div>
+            <div class="form-group">
+              <label for="loginPassword">Password*</label>
+              <input
+                type="password"
+                id="loginPassword"
+                name="password"
+                required
+              />
+              <a href="#forgot-password" class="forgot-password"
+                >Forgot Password?</a
+              >
+            </div>
+            <button type="submit" class="btn">Login</button>
+            <div class="social-login">
+              <p>Or login with:</p>
+              <div class="social-btns">
+                <a href="#" class="social-btn fb"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+                <a href="#" class="social-btn google"
+                  ><i class="fab fa-google"></i
+                ></a>
+              </div>
+            </div>
+          </form>
+        </div>
+
+        <!-- Signup Form -->
+        <div class="auth-form" id="signup">
+          <form id="signupForm">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="signupFirstName">First Name*</label>
+                <input
+                  type="text"
+                  id="signupFirstName"
+                  name="firstName"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="signupLastName">Last Name*</label>
+                <input
+                  type="text"
+                  id="signupLastName"
+                  name="lastName"
+                  required
+                />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="signupEmail">Email*</label>
+              <input type="email" id="signupEmail" name="email" required />
+            </div>
+            <div class="form-group">
+              <label for="signupPhone">Phone*</label>
+              <input type="tel" id="signupPhone" name="phone" required />
+            </div>
+            <div class="form-group">
+              <label for="signupPassword">Password*</label>
+              <input
+                type="password"
+                id="signupPassword"
+                name="password"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="signupConfirm">Confirm Password*</label>
+              <input
+                type="password"
+                id="signupConfirm"
+                name="confirm"
+                required
+              />
+            </div>
+            <div class="form-group checkbox-group">
+              <input type="checkbox" id="terms" name="terms" required />
+              <label for="terms"
+                >I agree to the <a href="#">Terms of Service</a> and
+                <a href="#">Privacy Policy</a></label
+              >
+            </div>
+            <button type="submit" class="btn">Create Account</button>
+          </form>
+        </div>
+
+        <!-- Forgot Password Modal -->
+        <div class="modal" id="forgot-password">
+          <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Reset Your Password</h2>
+            <p>
+              Enter your email address and we'll send you a link to reset your
+              password.
+            </p>
+            <form id="forgotForm">
+              <div class="form-group">
+                <label for="forgotEmail">Email*</label>
+                <input type="email" id="forgotEmail" name="email" required />
+              </div>
+              <button type="submit" class="btn">Send Reset Link</button>
+            </form>
+          </div>
+        </div>
+
+        <!-- Benefits Section -->
+        <div class="benefits-section">
+          <h2>Benefits of Creating an Account</h2>
+          <ul>
+            <li>
+              <i class="fas fa-check-circle"></i> Track your service history
+            </li>
+            <li>
+              <i class="fas fa-check-circle"></i> Manage upcoming appointments
+            </li>
+            <li>
+              <i class="fas fa-check-circle"></i> Receive service reminders
+            </li>
+            <li><i class="fas fa-check-circle"></i> Access digital invoices</li>
+            <li><i class="fas fa-check-circle"></i> Earn loyalty rewards</li>
+            <li><i class="fas fa-check-circle"></i> Get exclusive offers</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-col">
+            <h3>AutoCare</h3>
+            <p>
+              Your trusted partner for all car repair and maintenance services.
+            </p>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+          <div class="footer-col">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="/index.html">Home</a></li>
+              <li><a href="/about.html">About Us</a></li>
+              <li><a href="/services.html">Services</a></li>
+              <li><a href="/pricing.html">Pricing</a></li>
+              <li><a href="/contact.html">Contact</a></li>
+              <li><a href="/gallery.html">Gallery</a></li>
+              <li><a href="/faq.html">Faq</a></li>
+              <li><a href="/testimonials.html">Testimonials</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h3>Services</h3>
+            <ul>
+              <li><a href="/services.html">Engine Repair</a></li>
+              <li><a href="/services.html">AC Service</a></li>
+              <li><a href="/services.html">Battery Replacement</a></li>
+              <li><a href="/services.html">Denting & Painting</a></li>
+              <li><a href="/services.html">Periodic Maintenance</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h3>Contact Us</h3>
+            <ul class="contact-info">
+              <li>
+                <i class="fas fa-map-marker-alt"></i> 123 Auto Street, Repair
+                City
+              </li>
+              <li><i class="fas fa-phone"></i> +1 (234) 567-8900</li>
+              <li><i class="fas fa-envelope"></i> info@autocare.com</li>
+              <li><i class="fas fa-clock"></i> Mon-Sat: 8:00 AM - 6:00 PM</li>
+            </ul>
+          </div>
+        </div>
+        <div class="copyright">
+          <p>&copy; 2025 Ankit Prajapati. All Rights Reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="main.js"></script>
+  </body>
+</html>

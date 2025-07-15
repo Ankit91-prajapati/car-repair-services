@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gallery - AutoCare</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="logo">
+          <h1>Auto<span>Care</span></h1>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/about.html">About Us</a></li>
+            <li><a href="/services.html">Services</a></li>
+            <li><a href="/pricing.html">Pricing</a></li>
+            <li><a href="/contact.html">Contact</a></li>
+            <li><a href="/gallery.html">Gallery</a></li>
+            <li><a href="/faq.html">Faq</a></li>
+            <li><a href="/testimonials.html">Testimonials</a></li>
+          </ul>
+          <div class="nav-btns">
+            <a href="login.html" class="btn-outline">Login</a>
+            <a href="booking.html" class="btn">Book Now</a>
+          </div>
+        </nav>
+        <div class="mobile-menu">
+          <i class="fas fa-bars"></i>
+        </div>
+      </div>
+    </header>
+    <!-- Gallery Banner -->
+    <section class="page-banner">
+      <div class="container">
+        <h1>Our Gallery</h1>
+        <p>See our workshop, team, and transformation stories</p>
+      </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery-section">
+      <div class="container">
+        <div class="gallery-filter">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="workshop">Workshop</button>
+          <button class="filter-btn" data-filter="team">Our Team</button>
+          <button class="filter-btn" data-filter="transformations">
+            Transformations
+          </button>
+          <button class="filter-btn" data-filter="equipment">Equipment</button>
+        </div>
+
+        <div class="gallery-grid">
+          <!-- Image 1 -->
+          <div class="gallery-item" data-category="workshop">
+            <img src="images/gallery1.jpg" alt="AutoCare Workshop" />
+            <div class="gallery-overlay">
+              <h3>Our Workshop</h3>
+              <p>State-of-the-art service bays</p>
+            </div>
+          </div>
+
+          <!-- Image 2 -->
+          <div class="gallery-item" data-category="team">
+            <img src="images/gallery2.jpg" alt="Mechanics at Work" />
+            <div class="gallery-overlay">
+              <h3>Certified Technicians</h3>
+              <p>Our team in action</p>
+            </div>
+          </div>
+
+          <!-- Image 3 -->
+          <div class="gallery-item" data-category="transformations">
+            <img src="images/gallery3.jpg" alt="Before and After Dent Repair" />
+            <div class="gallery-overlay">
+              <h3>Dent Repair</h3>
+              <p>Before and after</p>
+            </div>
+          </div>
+
+          <!-- Image 4 -->
+          <div class="gallery-item" data-category="equipment">
+            <img src="images/gallery4.jpg" alt="Diagnostic Equipment" />
+            <div class="gallery-overlay">
+              <h3>Advanced Diagnostics</h3>
+              <p>Professional tools</p>
+            </div>
+          </div>
+
+          <!-- Image 5 -->
+          <div class="gallery-item" data-category="workshop">
+            <img src="images/gallery5.jpg" alt="Workshop Interior" />
+            <div class="gallery-overlay">
+              <h3>Service Area</h3>
+              <p>Clean and organized</p>
+            </div>
+          </div>
+
+          <!-- Image 6 -->
+          <div class="gallery-item" data-category="team">
+            <img src="images/gallery6.jpg" alt="Team Meeting" />
+            <div class="gallery-overlay">
+              <h3>Team Briefing</h3>
+              <p>Daily quality check</p>
+            </div>
+          </div>
+
+          <!-- Image 7 -->
+          <div class="gallery-item" data-category="transformations">
+            <img src="images/gallery7.jpg" alt="Paint Job Transformation" />
+            <div class="gallery-overlay">
+              <h3>Paint Restoration</h3>
+              <p>Complete makeover</p>
+            </div>
+          </div>
+
+          <!-- Image 8 -->
+          <div class="gallery-item" data-category="equipment">
+            <img src="images/gallery8.jpg" alt="Lifting Equipment" />
+            <div class="gallery-overlay">
+              <h3>Heavy Duty Lifts</h3>
+              <p>For all vehicle types</p>
+            </div>
+          </div>
+
+          <!-- Image 9 -->
+          <div class="gallery-item" data-category="workshop">
+            <img src="images/gallery9.jpg" alt="Waiting Area" />
+            <div class="gallery-overlay">
+              <h3>Customer Lounge</h3>
+              <p>Comfortable waiting area</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Before & After Section -->
+        <div class="before-after">
+          <h2 class="section-title">Transformation Stories</h2>
+          <div class="ba-grid">
+            <div class="ba-item">
+              <div class="ba-images">
+                <img
+                  src="images/ba1-before.jpg"
+                  alt="Before Repair"
+                  class="before"
+                />
+                <img
+                  src="images/ba1-after.jpg"
+                  alt="After Repair"
+                  class="after"
+                />
+              </div>
+              <div class="ba-content">
+                <h3>Major Collision Repair</h3>
+                <p>
+                  This vehicle was involved in a serious collision. Our body
+                  shop team completely rebuilt the front end, replaced damaged
+                  components, and matched the factory paint perfectly.
+                </p>
+              </div>
+            </div>
+            <div class="ba-item">
+              <div class="ba-images">
+                <img
+                  src="images/ba2-before.jpg"
+                  alt="Before Repair"
+                  class="before"
+                />
+                <img
+                  src="images/ba2-after.jpg"
+                  alt="After Repair"
+                  class="after"
+                />
+              </div>
+              <div class="ba-content">
+                <h3>Engine Overhaul</h3>
+                <p>
+                  The engine in this classic car was smoking and losing power.
+                  We performed a complete rebuild, restoring it to like-new
+                  condition with improved performance.
+                </p>
+              </div>
+            </div>
+            <div class="ba-item">
+              <div class="ba-images">
+                <img
+                  src="images/ba3-before.jpg"
+                  alt="Before Repair"
+                  class="before"
+                />
+                <img
+                  src="images/ba3-after.jpg"
+                  alt="After Repair"
+                  class="after"
+                />
+              </div>
+              <div class="ba-content">
+                <h3>Interior Restoration</h3>
+                <p>
+                  Severe water damage had ruined this vehicle's interior. We
+                  replaced all damaged components, deep cleaned, and restored it
+                  to better-than-new condition.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Modal for Gallery Images -->
+    <div class="gallery-modal">
+      <span class="close-modal">&times;</span>
+      <img class="modal-content" id="modalImage" />
+      <div class="modal-caption"></div>
+    </div>
+
+    <footer>
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-col">
+            <h3>AutoCare</h3>
+            <p>
+              Your trusted partner for all car repair and maintenance services.
+            </p>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+          <div class="footer-col">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="/index.html">Home</a></li>
+            <li><a href="/about.html">About Us</a></li>
+            <li><a href="/services.html">Services</a></li>
+            <li><a href="/pricing.html">Pricing</a></li>
+            <li><a href="/contact.html">Contact</a></li>
+            <li><a href="/gallery.html">Gallery</a></li>
+            <li><a href="/faq.html">Faq</a></li>
+            <li><a href="/testimonials.html">Testimonials</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h3>Services</h3>
+            <ul>
+              <li><a href="services.html">Engine Repair</a></li>
+              <li><a href="services.html">AC Service</a></li>
+              <li><a href="services.html">Battery Replacement</a></li>
+              <li><a href="services.html">Denting & Painting</a></li>
+              <li><a href="services.html">Periodic Maintenance</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h3>Contact Us</h3>
+            <ul class="contact-info">
+              <li>
+                <i class="fas fa-map-marker-alt"></i> 123 Auto Street, Repair
+                City
+              </li>
+              <li><i class="fas fa-phone"></i> +1 (234) 567-8900</li>
+              <li><i class="fas fa-envelope"></i> info@autocare.com</li>
+              <li><i class="fas fa-clock"></i> Mon-Sat: 8:00 AM - 6:00 PM</li>
+            </ul>
+          </div>
+        </div>
+        <div class="copyright">
+          <p>&copy; 2025 Ankit Prajapati. All Rights Reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="main.js"></script>
+  </body>
+</html>
